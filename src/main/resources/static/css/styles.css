@@ -1,0 +1,81 @@
+/* 전체 페이지 여백 추가 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px; /* 페이지 안쪽 여백 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 전체 컨테이너 스타일 */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+/* 제목 스타일 */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* 총 확진자, 사망자 수 스타일 */
+.total-stats p {
+    font-size: 18px;
+    text-align: center;
+    color: #555;
+}
+
+/* 차트들 간의 간격 추가 */
+.charts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 40px; /* 차트들 사이의 여백 */
+}
+
+/* 각 차트의 컨테이너 스타일 */
+.chart {
+    width: 30%; /* 차트 크기를 줄여서 여유 공간 만들기 */
+    margin-bottom: 30px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 각 차트 제목 스타일 */
+.chart h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* 차트 크기 조정 */
+canvas {
+    width: 100% !important;
+    height: 300px !important; /* 차트 높이 조정 */
+}
+
+/* 작은 화면에 맞춰 차트 크기 조정 */
+@media (max-width: 768px) {
+    .chart {
+        width: 45%; /* 2개씩 나열 */
+    }
+}
+
+/* 더 작은 화면에 맞춰 차트 크기 조정 */
+@media (max-width: 480px) {
+    .chart {
+        width: 100%; /* 세로로 차트 나열 */
+    }
+}
