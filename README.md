@@ -12,6 +12,12 @@
 - 웹 기반 차트로 직관적인 데이터 확인 가능
 - 정형 데이터 수집 → 분석 → 시각화 전체 구현
 
+
+👉 [Corona Visualizer 시연 영상 보러 가기](https://youtu.be/51z6Or3i0Ug)
+
+[![Corona Visualizer 시연 영상](https://img.youtube.com/vi/51z6Or3i0Ug/0.jpg)](https://youtu.be/51z6Or3i0Ug)
+
+
 ## 🛠 사용 기술
 - Java 17 / Spring Boot
 - Jsoup / Chart.js / Thymeleaf / HTML+CSS
